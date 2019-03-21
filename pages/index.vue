@@ -2,23 +2,9 @@
   <section class="container">
     <div>
       <logo />
-      <h1 class="title">
-        opentok-support-roulette
-      </h1>
-      <h2 class="subtitle">
-        Chatroulette for Nexmo Support
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green"
-          >Documentation</a
-        >
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-          >GitHub</a
-        >
-      </div>
+      <h1 class="title">Chatroulette for Nexmo Support</h1>
+      <nuxt-link class="button" to="/help">I need help!</nuxt-link>
+      <nuxt-link class="button" to="/support">I'm the help!</nuxt-link>
     </div>
   </section>
 </template>
@@ -36,7 +22,7 @@ export default {
 <style>
 .container {
   margin: 0 auto;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,15 +39,11 @@ export default {
   letter-spacing: 1px;
 }
 
-.subtitle {
+button {
   font-weight: 300;
   font-size: 42px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>

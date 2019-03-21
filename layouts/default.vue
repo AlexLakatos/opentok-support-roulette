@@ -17,6 +17,12 @@ html {
   box-sizing: border-box;
 }
 
+body,
+html {
+  background-color: gray;
+  height: 100%;
+}
+
 *,
 *:before,
 *:after {
